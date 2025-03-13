@@ -1,0 +1,10 @@
+topic_consumer: out_data
+topic_producer: in_data
+consumer:
+  bootstrap.servers: localhost:9092
+  group.id: out_group
+  security.protocol: PLAINTEXT
+  auto.offset.reset: earliest
+producer:
+  bootstrap.servers: localhost:9092
+  security.protocol: PLAINTEXT
