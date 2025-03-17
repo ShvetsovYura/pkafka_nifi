@@ -1,0 +1,21 @@
+topic: pdata
+schema_registry_url: https://rc1d-a8m62cbui79jvek0.mdb.yandexcloud.net:443
+consumer:
+  bootstrap.servers: rc1d-a8m62cbui79jvek0.mdb.yandexcloud.net:9091
+  group.id: cons_group
+  security.protocol: SASL_SSL
+  ssl.ca.location: cmd/YandexInternalRootCA.crt
+  sasl.mechanism: SCRAM-SHA-512
+  sasl.username: cons_user
+  sasl.password: ghbdtnvbh
+  enable.ssl.certificate.verification: true
+  auto.offset.reset: earliest
+producer:
+  bootstrap.servers: rc1d-a8m62cbui79jvek0.mdb.yandexcloud.net:9091
+  security.protocol: SASL_SSL
+  ssl.ca.location: cmd/YandexInternalRootCA.crt
+  sasl.mechanism: SCRAM-SHA-512
+  sasl.username: prod_user
+  sasl.password: ghbdtnvbh
+  enable.ssl.certificate.verification: true
+  
